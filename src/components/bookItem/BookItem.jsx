@@ -1,4 +1,4 @@
-const BookItem = ({ title, author, rating, pageCount }) => {
+const BookItem = ({ title, author, rating, pageCount, imageUrl }) => {
     const starAmount = rating?.length;
 
     return (
@@ -11,6 +11,7 @@ const BookItem = ({ title, author, rating, pageCount }) => {
                     "estrella"}
             </div>
             <p>{pageCount} páginas</p>
+        <img src={imageUrl} alt="" />
         </>
     );
 };
